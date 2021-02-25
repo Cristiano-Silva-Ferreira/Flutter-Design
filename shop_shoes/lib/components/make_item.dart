@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:shop_shoes/page/shoes_page.dart';
 
-Widget makeItem({image, tag}) {
+Widget makeItem({image, tag, context}) {
   return Hero(
     tag: tag,
     child: GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ShoesPage(
+              image: image,
+            ),
+          ),
+        );
+      },
       child: Container(
         height: 250,
         width: double.infinity,

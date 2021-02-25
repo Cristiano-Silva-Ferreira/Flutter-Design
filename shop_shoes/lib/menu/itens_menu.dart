@@ -100,9 +100,18 @@ class ItensMenu extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            makeItem(image: 'assets/images/one.jpg', tag: 'red'),
-            makeItem(image: 'assets/images/two.jpg', tag: 'blue'),
-            makeItem(image: 'assets/images/three.jpg', tag: 'white'),
+            makeItem(
+                image: 'assets/images/one.jpg', 
+                tag: 'red', 
+                context: context),
+            makeItem(
+                image: 'assets/images/two.jpg', 
+                tag: 'blue', 
+                context: context),
+            makeItem(
+                image: 'assets/images/three.jpg',
+                tag: 'white',
+                context: context),
           ],
         ),
       ),
