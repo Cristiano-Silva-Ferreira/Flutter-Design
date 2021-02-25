@@ -30,50 +30,66 @@ class ItensMenu extends StatelessWidget {
                       ),
                     ),
                   ),
-                  AspectRatio(
-                    aspectRatio: 2.2 / 1,
-                    child: Container(
-                      margin: EdgeInsets.only(right: 10),
-                      child: Center(
-                        child: Text(
-                          'Tênis',
-                          style: TextStyle(fontSize: 17),
+                  FlatButton(
+                    onPressed: () {},
+                    child: AspectRatio(
+                      aspectRatio: 2.2 / 1,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        margin: EdgeInsets.only(right: 10),
+                        child: Center(
+                          child: Text(
+                            'Tênis',
+                            style: TextStyle(fontSize: 17),
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  AspectRatio(
-                    aspectRatio: 2.2 / 1,
-                    child: Container(
-                      margin: EdgeInsets.only(right: 10),
-                      child: Center(
-                        child: Text(
-                          'Futebol',
-                          style: TextStyle(fontSize: 17),
+                  FlatButton(
+                    onPressed: () {},
+                    child: AspectRatio(
+                      aspectRatio: 2.2 / 1,
+                      child: Container(
+                        margin: EdgeInsets.only(right: 10),
+                        child: Center(
+                          child: Text(
+                            'Futebol',
+                            style: TextStyle(fontSize: 17),
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  AspectRatio(
-                    aspectRatio: 2.2 / 1,
-                    child: Container(
-                      margin: EdgeInsets.only(right: 10),
-                      child: Center(
-                        child: Text(
-                          'Corrida',
-                          style: TextStyle(fontSize: 17),
+                  FlatButton(
+                    onPressed: () {},
+                    child: AspectRatio(
+                      aspectRatio: 2.2 / 1,
+                      child: Container(
+                        margin: EdgeInsets.only(right: 10),
+                        child: Center(
+                          child: Text(
+                            'Corrida',
+                            style: TextStyle(fontSize: 17),
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  AspectRatio(
-                    aspectRatio: 2 / 1,
-                    child: Container(
-                      margin: EdgeInsets.only(right: 10),
-                      child: Center(
-                        child: Text(
-                          'Golfer',
-                          style: TextStyle(fontSize: 17),
+                  FlatButton(
+                    onPressed: () {},
+                    child: AspectRatio(
+                      aspectRatio: 2 / 1,
+                      child: Container(
+                        margin: EdgeInsets.only(right: 10),
+                        child: Center(
+                          child: Text(
+                            'Golfer',
+                            style: TextStyle(fontSize: 17),
+                          ),
                         ),
                       ),
                     ),
@@ -84,7 +100,9 @@ class ItensMenu extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            makeItem(image: 'assets/images/one.jpg', tag: 'Vermelho'),
+            makeItem(image: 'assets/images/one.jpg', tag: 'red'),
+            makeItem(image: 'assets/images/two.jpg', tag: 'blue'),
+            makeItem(image: 'assets/images/three.jpg', tag: 'white'),
           ],
         ),
       ),
