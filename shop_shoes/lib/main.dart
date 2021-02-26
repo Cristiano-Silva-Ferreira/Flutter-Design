@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         leading: null,
         title: Text(
-          'Calçados',
+          'Tênis',
           style: TextStyle(
             color: Colors.black,
             fontSize: 25,

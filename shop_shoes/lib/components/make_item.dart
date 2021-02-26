@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:shop_shoes/Animation/FadeAnimation.dart';
 import 'package:shop_shoes/page/shoes_page.dart';
 
 Widget makeItem({image, tag, context}) {
@@ -46,51 +47,58 @@ Widget makeItem({image, tag, context}) {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(
-                        'Tênis',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
+                      FadeAnimation(
+                        1,
+                        Text(
+                          'Tênis',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
                         ),
                       ),
                       SizedBox(
                         height: 10,
                       ),
-                      Text(
-                        'Nike',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+                      FadeAnimation(
+                        1.1,
+                        Text(
+                          'Nike',
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                       ),
                     ],
                   ),
                 ),
-                Container(
-                  width: 35,
-                  height: 35,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.white,
-                  ),
-                  child: Center(
-                    child: Icon(
-                      Icons.favorite_border,
-                      size: 20,
+                FadeAnimation(
+                  1.2,
+                  Container(
+                    width: 35,
+                    height: 35,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.favorite_border,
+                        size: 20,
+                      ),
                     ),
                   ),
-                )
+                ),
               ],
             ),
-            Text(
-              'R\$ 100,00',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+            FadeAnimation(
+              1.2,
+              Text(
+                'R\$ 100,00',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
               ),
-            )
+            ),
           ],
         ),
       ),
