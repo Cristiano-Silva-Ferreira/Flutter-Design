@@ -14,14 +14,15 @@ class LoginScreen extends StatelessWidget {
       body: Container(
         height: double.infinity,
         decoration: BoxDecoration(
-            gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.white,
-            Colors.white.withOpacity(0.4),
-          ],
-        )),
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Colors.white,
+              Colors.white.withOpacity(0.4),
+            ],
+          ),
+        ),
         child: SingleChildScrollView(
           child: Stack(
             children: <Widget>[
